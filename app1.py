@@ -7,11 +7,13 @@ app = Flask(__name__)
 clinic = ClinicQueue()
 
 @app.route("/")
+# Home page route
 def home():
     patients = clinic.get_all_patients()
     return render_template("index.html", patients=patients, served=clinic.total_served())
 
 @app.route("/add", methods=["GET", "POST"])
+# Add patient route
 def add_patient():
     if request.method == "POST":
         name = request.form["name"]
@@ -21,6 +23,7 @@ def add_patient():
     return render_template("add_patient.html")
 
 @app.route("/serve")
+# Serve patient route
 def serve():
     clinic.serve_patient()
     return redirect("/")
