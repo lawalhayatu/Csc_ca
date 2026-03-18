@@ -10,7 +10,7 @@ class Patient:
     def get_details(self):
         return f"{self.name} (Added at {self.time_added.strftime('%H:%M:%S')})"
 
-
+# ClinicQueue manages the queue of patients
 class ClinicQueue:
     def __init__(self):
         self.queue = []
