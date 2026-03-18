@@ -1,3 +1,4 @@
+# Flask app for Clinic Queue Manager
 from flask import Flask, render_template, request, redirect
 from models import Patient, ClinicQueue
 
