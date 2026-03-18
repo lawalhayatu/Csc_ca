@@ -1,6 +1,7 @@
 # This file contains the main classes for clinic Queue Manager
 from datetime import datetime
 
+# Patient represents a person waiting in the clinic
 class Patient:
     def __init__(self, name):
         self.name = name
