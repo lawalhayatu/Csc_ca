@@ -1,3 +1,4 @@
+# This file contains the main classes for clinic Queue Manager
 from datetime import datetime
 
 class Patient:
