@@ -23,3 +23,5 @@ Patients are added to a queue and served in order (FIFO).
 
 4. Open browser:
    http://127.0.0.1:5000/
+
+<!-- This is a beginner-friendly Flask project -->
