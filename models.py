@@ -3,7 +3,7 @@ from datetime import datetime
 class Patient:
     def __init__(self, name):
         self.name = name
-        self.time_added = None
+        self.time_added = datetime.now()
 
     def get_details(self):
         return f"{self.name} (Added at {self.time_added.strftime('%H:%M:%S')})"
